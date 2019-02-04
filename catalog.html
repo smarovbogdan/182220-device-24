@@ -10,7 +10,10 @@
   <header class="main-header">
       <a class="main-header-logo">device</a>
       <nav class="main-header-user-navigation">
-        <!-- здесь будет форма поля поиска -->
+        <form class="site-search">
+          <input type="text" placeholder="Поиск по сайту">
+          <button type="submit">найти</button>
+        </form>
         <ul class="navigation-list">
           <li class="user-account">Валентин Петухов</li>
           <li class="logout-link"><a href="#">Выйти</a></li>
@@ -46,7 +49,52 @@
     </ul>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма фильтра -->
+      <h3>Фильтр:</h3>
+      <form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
+        <fieldset>
+          <legend>стоимость</legend>
+          <input type="range" min="0" max="9000" step="100" value="5000">
+        </fieldset>
+        <fieldset>
+          <legend>цвет</legend>
+          <ul class="color">
+            <li class="filter-option">
+              <input type="checkbox" id="black" name="filter-checkbox" checked>
+              <label for="black">черный</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" id="white" name="filter-checkbox">
+              <label for="white">белый</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" id="blue" name="filter-checkbox" checked>
+              <label for="blue">синий</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" id="red" name="filter-checkbox" checked>
+              <label for="red">красный</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="filter-checkbox" id="pink">
+              <label for="pink">розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>bluetooth</legend>
+          <ul class="bluetooth-feature">
+            <li>
+              <input type="radio" id="has-bluetooth" checked>
+              <label for="has-bluetooth">есть</label>
+            </li>
+            <li>
+              <input type="radio" id="has-not-bluetooth">
+              <label for="has-not-bluetooth">нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit" name="button">показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">
@@ -67,7 +115,7 @@
       <ul class="monopods-list">
         <li class="monopods-list-item">
           <div>
-            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+            <a href="#"><img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка"></a>
             <button class="button to-cart" type="button" name="button">В корзину</button>
             <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
             <p class="item-title">Любительская селфи-палка</p>
@@ -76,7 +124,7 @@
         </li>
         <li>
           <div>
-            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+            <a href="#"><img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка"></a>
             <button class="button to-cart" type="button" name="button">В корзину</button>
             <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
             <p class="item-title">Профессиональная селфи-палка</p>
@@ -85,7 +133,7 @@
         </li>
         <li>
           <div>
-            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+            <a href="#"><img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
             <button class="button to-cart" type="button" name="button">В корзину</button>
             <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
             <p class="item-title">Непотопляемая селфи-палка</p>
@@ -94,7 +142,7 @@
         </li>
         <li>
           <div>
-            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+            <a href="#"><img src="img/item-4.png" width="360" height="380" alt="Селфи-палка 'Следуй за мной'"></a>
             <button class="button to-cart" type="button" name="button">В корзину</button>
             <button class="to-compare-button" type="button" name="to-compare-button">Добавить к сравнению</button>
             <p class="item-title">Селфи-палка "Следуй за мной"</p>
