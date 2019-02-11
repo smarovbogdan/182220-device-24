@@ -30,6 +30,10 @@ a {
 text-decoration: none;
 }
 
+.main-header {
+  background-color: #F0C52E;
+}
+
 .button {
   font: inherit;
 
