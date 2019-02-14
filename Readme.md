@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Александр Лукашевич](https://up.htmlacademy.ru/htmlcss/24/user/182220).
+* Студент: [Шмаров Богдан](https://up.htmlacademy.ru/htmlcss/24/user/18222).
 * Наставник: [Олег Зубов](https://htmlacademy.ru/profile/id42701).
 
 ---
